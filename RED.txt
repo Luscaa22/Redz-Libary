@@ -1580,13 +1580,13 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Saida do hub",
-			Text = "Vai fechar o HUB Do tcc?",
+			Title = "Fechar Chaos Hub",
+			Text = "Tem Certeza que deseja Fechar o Chaos Hub ?",
 			Options = {
-				{"confirmar", function()
+				{"Sim", function()
 					ScreenGui:Destroy()
 				end},
-				{"cancelar"}
+				{"Não"}
 			}
 		})
 	end
